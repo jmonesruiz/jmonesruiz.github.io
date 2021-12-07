@@ -1,0 +1,15 @@
+.project-list {
+	display: grid;
+	grid-template-columns: repeat(4, 32rem);
+	align-items: center;
+	justify-content: center;
+	gap: 3.8rem;
+	list-style: none;
+
+	@media screen and (max-width: 95em) {
+		grid-template-columns: repeat(2, 32rem);
+	}
+	@media screen and (max-width: 50em) {
+		grid-template-columns: repeat(1, 32rem);
+	}
+}

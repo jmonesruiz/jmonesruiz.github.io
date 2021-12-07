@@ -1,0 +1,61 @@
+@import "../variables";
+
+.project-card {
+	display: block;
+	width: 32rem;
+	background-color: $component-color;
+	box-shadow: 0 0 2.5rem rgba($color: #000000, $alpha: 25%);
+	padding: 1.2rem 1.6rem 1.4rem;
+	border-radius: 0.4rem;
+	border-top: 0.3rem solid $primary-color;
+	transition: all 0.1s ease-in-out;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.2rem;
+		margin-bottom: 0.4rem;
+	}
+	&__name {
+		font-family: "Open Sans", sans-serif;
+		font-size: 1.8rem;
+		font-weight: 600;
+	}
+	&__tags {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.8rem;
+	}
+	&__tag {
+		font-family: "Caveat Brush", cursive;
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: lighten($primary-color, 10%);
+		display: block;
+		padding: 0.2rem 0.5rem;
+		border: 0.2rem solid $primary-color;
+		border-radius: 0.7rem;
+	}
+	&__description {
+		text-align: left;
+		font-family: "Roboto", sans-serif;
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: $primary-color;
+	}
+	&__img {
+		border-radius: 0.5rem;
+		margin-top: 1.6rem;
+		width: 100%;
+		height: 18rem;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	&:hover {
+		transform: scale(1.03);
+	}
+}
