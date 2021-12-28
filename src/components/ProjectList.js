@@ -28,14 +28,14 @@ const projects = [
 		description: "URL shortener landing page",
 		tags: ["HTML", "SASS", "JS"],
 		img: shortlyImg,
-		url: rootDomain + "/manage-landing-page",
+		url: rootDomain + "/url-shortening-api",
 	},
 	{
 		name: "Manage",
 		description: "Product landing page",
 		tags: ["HTML", "SASS", "JS"],
 		img: manageImg,
-		url: rootDomain + "/url-shortening-api",
+		url: rootDomain + "/manage-landing-page",
 	},
 ];
 
